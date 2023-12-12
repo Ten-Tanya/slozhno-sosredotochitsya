@@ -14,10 +14,10 @@
 
 /* СТИЛИ ДЛЯ HEADER. */
 
-.header{
+.header {
   position: relative;
   display: grid;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(5, auto);
   min-height:100vh;
   padding: 0 10px;
 }
@@ -54,6 +54,7 @@ line-height: 82.5%;
 }
 
 .header__theme-menu {
+  grid-row: 1/3;
   justify-self: end;
   align-self: end;
   line-height: 100%;
@@ -101,6 +102,7 @@ line-height: 82.5%;
 }
 
 .header_content {
+  grid-row: 4/5;
   align-self: center;
 }
 
@@ -163,7 +165,7 @@ header p::after {
   
   .header_content {
     justify-self: self-end;
-    align-self: start;
+    align-self: end;
     max-width: 50%;
   }
   
@@ -203,7 +205,8 @@ header p::after {
 
   .header__title {
     font-size:clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    } 
+    
+  } 
 
 }
 
@@ -265,7 +268,8 @@ header p::after {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
-  }
+   }
+
   .content_text-block_1 .content__title  {
     grid-row: 1/3;
     margin-block-end:0;
@@ -425,7 +429,7 @@ img {
     grid-row: 2/4;
   }
 
-  .img_4{
+  .img_4 {
     grid-column: 2;
     grid-row:2;
   }
