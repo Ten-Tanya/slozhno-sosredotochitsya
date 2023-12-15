@@ -179,14 +179,20 @@ header .decor::after {
   }
 
   .header__theme-menu-list {
-    flex-direction: row;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: 1fr;
+    
   }
 
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   .header__theme-menu-button_active {
-    padding: 4px 13px;
+    outline-offset: 1px;
+  }
+
+  .header__theme-menu-button {
+    padding:2px 13px;
   }
 }
 
