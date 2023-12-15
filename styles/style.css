@@ -175,7 +175,7 @@ header .decor::after {
   .header__theme-menu {
     justify-self: center;
     align-self: start;
-    padding: 0 0 4px 1em;
+    padding: 0 0 0 1em;
   }
 
   .header__theme-menu-list {
